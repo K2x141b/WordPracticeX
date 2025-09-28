@@ -1,0 +1,40 @@
+{
+  "questions": [
+    "une histoire",
+    "il y a",
+    "un accident (l'accident)",
+    "la cloche",
+    "sonner",
+    "le prof/la prof",
+    "la salle de classe",
+    "la récréation",
+    "d'abord",
+    "ensuite",
+    "finalement",
+    "J'ouvre la porte.",
+    "la clé",
+    "casser",
+    "Il pleut.",
+    "fatigué/e",
+    "avoir"
+  ],
+  "answers": [
+    "eine Geschichte",
+    "es hat, es gibt",
+    "ein Unfall (der Unfall)",
+    "die Glocke",
+    "klingeln, läuten",
+    "der Lehrer/die Lehrerin",
+    "das Schulzimmer",
+    "die Pause",
+    "zuerst",
+    "dann, danach, anschliessend",
+    "schliesslich, letztlich",
+    "Ich öffne die Tür.",
+    "der Schlüssel",
+    "kaputtmachen, zerbrechen",
+    "Es regnet.",
+    "müde",
+    "haben"
+  ]
+}

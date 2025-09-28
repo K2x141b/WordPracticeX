@@ -1,0 +1,30 @@
+{
+  "questions": [
+    "avec un ordinateur",
+    "sur la tablette",
+    "seul/seule",
+    "avec ma mère",
+    "dans un hamac",
+    "à la maison",
+    "à l'école",
+    "avec ma musique",
+    "le matin",
+    "à midi",
+    "l'après-midi",
+    "le soir"
+  ],
+  "answers": [
+    "mit einem Computer",
+    "auf dem Tablet",
+    "allein",
+    "mit meiner Mutter",
+    "in einer Hängematte",
+    "zu Hause",
+    "in der Schule",
+    "mit meiner Musik",
+    "am Morgen",
+    "mittags",
+    "am Nachmittag",
+    "am Abend"
+  ]
+}

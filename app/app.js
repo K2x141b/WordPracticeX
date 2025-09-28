@@ -1,0 +1,11 @@
+import "../database/wl-file-paths.js";
+import "../features/menu/menu.component.js";
+import "../features/prac-page/prac.component.js";
+import "../features/prac-page/prac.logic.js";
+import "../features/prac-page/prac.ui.js";
+import "../features/set-page/set.component.js";
+import "../features/set-page/set.logic.js";
+import "../features/set-page/set.ui.js";
+import "../features/wl-page/wl.component.js";
+import "../features/wl-page/wl.logic.js";
+import "../features/wl-page/wl.ui.js";

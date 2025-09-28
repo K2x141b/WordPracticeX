@@ -1,0 +1,36 @@
+{
+  "questions": [
+    "un tee-shirt",
+    "un pull",
+    "une chemise",
+    "un short",
+    "une robe",
+    "une jupe",
+    "une veste",
+    "un chapeau",
+    "une casquette",
+    "un manteau",
+    "une montre",
+    "une cravate",
+    "des lunettes de soleil",
+    "un collier",
+    "un sac à main"
+  ],
+  "answers": [
+    "ein T-Shirt",
+    "einen Pullover",
+    "ein Hemd",
+    "eine kurze Hose",
+    "ein Kleid",
+    "ein Rock",
+    "eine Jacke",
+    "einen Hut",
+    "eine Mütze",
+    "ein Mantel",
+    "eine Uhr",
+    "eine Krawatte",
+    "eine Sonnenbrille",
+    "eine Halskette",
+    "eine Handtasche"
+  ]
+}

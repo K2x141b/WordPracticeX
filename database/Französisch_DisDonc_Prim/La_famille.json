@@ -1,0 +1,34 @@
+{
+  "questions": [
+    "mes grands-parents (mpl)",
+    "mon grand-père",
+    "ma grand-mère",
+    "mes parents (mpl)",
+    "ma mère",
+    "mon père",
+    "mon frère",
+    "ma sœur",
+    "mon oncle",
+    "ma tante",
+    "mon cousin",
+    "ma cousine",
+    "mon chien",
+    "mon chat"
+  ],
+  "answers": [
+    "meine Großeltern",
+    "mein Großvater",
+    "meine Großmutter",
+    "meine Eltern",
+    "meine Mutter",
+    "mein Vater",
+    "mein Bruder",
+    "meine Schwester",
+    "mein Onkel",
+    "meine Tante",
+    "mein Cousin",
+    "meine Cousine",
+    "mein Hund",
+    "meine Katze"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "questions": [
+    "le chien",
+    "le chat",
+    "le cheval",
+    "la vache",
+    "le loup",
+    "le hérisson",
+    "la marmotte",
+    "une abeille",
+    "le corbeau"
+  ],
+  "answers": [
+    "der Hund",
+    "die Katze",
+    "das Pferd",
+    "die Kuh",
+    "der Wolf",
+    "der Igel",
+    "das Murmeltier",
+    "eine Biene",
+    "der Rabe"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "questions": [
+    "blanc",
+    "noir",
+    "gris",
+    "bleu",
+    "rouge",
+    "jaune",
+    "vert",
+    "violet",
+    "rose",
+    "orange"
+  ],
+  "answers": [
+    "weiss",
+    "schwarz",
+    "grau",
+    "blau",
+    "rot",
+    "gelb",
+    "grün",
+    "violett",
+    "rosa",
+    "orange"
+  ]
+}

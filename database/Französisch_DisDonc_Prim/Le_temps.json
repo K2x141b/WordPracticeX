@@ -1,0 +1,22 @@
+{
+  "questions": [
+    "le soleil",
+    "le coucher du soleil",
+    "la pluie",
+    "la tempête",
+    "le tonnerre",
+    "la neige",
+    "la grêle",
+    "une étoile filante"
+  ],
+  "answers": [
+    "die Sonne",
+    "der Sonnenuntergang",
+    "der Regen",
+    "der Sturm",
+    "der Donner",
+    "der Schnee",
+    "der Hagel",
+    "eine Sternschnuppe"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "questions": [
+    "Singular",
+    "Plural",
+    "maskulin",
+    "feminin",
+    "Neutrum",
+    "Deklination",
+    "Konjugation",
+    "Nominativ",
+    "Akkusativ",
+    "Dativ",
+    "Genitiv",
+    "bestimmten Artikel",
+    "unbestimmten Artikel",
+    "Nomen, Verben, Adjektive, Pronomen, Partikel"
+  ],
+  "answers": [
+    "Einzahl",
+    "Mehrzahl",
+    "männlich",
+    "weiblich",
+    "sächlich",
+    "Anpassung des Nomens an Fall, Zahl",
+    "Anpassung des Verbs an die Person: ich bin, du bist, er ist ...",
+    "Wer-Fall",
+    "Wen-Fall",
+    "Wem-Fall",
+    "Wessen-Fall",
+    "der, die, das",
+    "ein, eine",
+    "5 Wortarten"
+  ]
+}

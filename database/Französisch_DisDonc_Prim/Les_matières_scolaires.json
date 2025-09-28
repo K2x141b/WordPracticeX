@@ -1,0 +1,34 @@
+{
+  "questions": [
+    "les maths / les mathématiques (fpl)",
+    "l'allemand (m)",
+    "les ACM (activités créatrices manuelles) (fpl)",
+    "le français",
+    "la gym / la gymnastique",
+    "la musique",
+    "les sciences de la nature",
+    "l'histoire (f)",
+    "l'anglais (m)",
+    "le dessin",
+    "la géo / la géographie",
+    "les vacances (fpl)",
+    "la récréation",
+    "le/la prof de français"
+  ],
+  "answers": [
+    "die Mathematik / die Mathematik",
+    "das Deutsch",
+    "die ACM (kreative Aktivitäten handwerkliche Tätigkeiten)",
+    "das Französische",
+    "die Gymnastik / das Turnen",
+    "die Musik",
+    "die Naturwissenschaften",
+    "Geschichte",
+    "Englisch",
+    "das Zeichnen",
+    "die Geo / Geographie",
+    "die Ferien",
+    "die Pause",
+    "der/die Französischlehrer/in"
+  ]
+}

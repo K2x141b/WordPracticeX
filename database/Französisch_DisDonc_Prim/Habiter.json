@@ -1,0 +1,18 @@
+{
+  "questions": [
+    "dans une maison",
+    "dans un appartement",
+    "au rez-de-chaussée",
+    "au premier étage",
+    "au sous-sol",
+    "dans un château"
+  ],
+  "answers": [
+    "in einem Haus",
+    "in einer Wohnung",
+    "im Erdgeschoss",
+    "im ersten Stock",
+    "im Untergeschoss",
+    "in einem Schloss"
+  ]
+}

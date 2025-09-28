@@ -1,0 +1,30 @@
+{
+  "questions": [
+    "la chaise",
+    "la feuille",
+    "la porte",
+    "le pupitre",
+    "la salle de classe",
+    "la trousse",
+    "l'horloge (f)",
+    "le crayon de couleur",
+    "la carte",
+    "le livre",
+    "le dictionnaire",
+    "l'ordinateur (m)"
+  ],
+  "answers": [
+    "der Stuhl",
+    "das Blatt",
+    "die Türe",
+    "das Pult",
+    "das Schulzimmer",
+    "das Etui",
+    "die Uhr",
+    "der Farbstift",
+    "die Karte",
+    "das Buch",
+    "das Wörterbuch",
+    "der Computer"
+  ]
+}

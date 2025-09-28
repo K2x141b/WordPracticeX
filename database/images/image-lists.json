@@ -1,0 +1,31 @@
+{
+    "Knochen": {
+        ".\\Knochen\\Augenhöhle.avif": "die Augenhöhle",
+        ".\\Knochen\\Becken.avif": "das Becken",
+        ".\\Knochen\\Brustbein.avif": "das Brustbein",
+        ".\\Knochen\\Elle.avif": "die Elle",
+        ".\\Knochen\\Fersenbein.avif": "das Fersenbein",
+        ".\\Knochen\\Fingerknochen.avif": "die Fingerknochen",
+        ".\\Knochen\\Fusswurzelknochen.avif": "die Fusswurzelknochen",
+        ".\\Knochen\\Handwurzelknochen.avif": "die Handwurzelknochen",
+        ".\\Knochen\\Kniescheibe.avif": "die Kniescheibe",
+        ".\\Knochen\\Kreuzbein.avif": "das Kreuzbein",
+        ".\\Knochen\\Mittelfussknochen.avif": "die Mittelfussknochen",
+        ".\\Knochen\\Mittelhandknochen.avif": "die Mittelhandknochen",
+        ".\\Knochen\\Nasenhöhle.avif": "die Nasenhöhle",
+        ".\\Knochen\\Oberarmknochen.avif": "der Oberarmknochen",
+        ".\\Knochen\\Oberkiefer.avif": "der Oberkiefer",
+        ".\\Knochen\\Oberschenkelknochen.avif": "der Oberschenkelknochen",
+        ".\\Knochen\\Rippen.avif": "die Rippen",
+        ".\\Knochen\\Schädel.avif": "der Schädel",
+        ".\\Knochen\\Schienbein.avif": "das Schienbein",
+        ".\\Knochen\\Schlüsselbein.avif": "das Schlüsselbein",
+        ".\\Knochen\\Schulterblatt.avif": "das Schulterblatt",
+        ".\\Knochen\\Speiche.avif": "die Speiche",
+        ".\\Knochen\\Steissbein.avif": "das Steissbein",
+        ".\\Knochen\\Unterkiefer.avif": "der Unterkiefer",
+        ".\\Knochen\\Wadenbein.avif": "das Wadenbein",
+        ".\\Knochen\\Wirbelsäule.avif": "die Wirbelsäule",
+        ".\\Knochen\\Zehenknochen.avif": "die Zehenknochen"
+    }
+}

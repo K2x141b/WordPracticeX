@@ -1,0 +1,22 @@
+{
+  "questions": [
+    "le lundi, parce que l'école recommence",
+    "le mardi",
+    "le mercredi, parce que j'ai le basket",
+    "le jeudi",
+    "le vendredi",
+    "le samedi, parce qu'il n'y a pas d'école",
+    "le dimanche",
+    "le weekend"
+  ],
+  "answers": [
+    "am Montag, weil die Schule wieder anfängt",
+    "der Dienstag",
+    "am Mittwoch, weil ich Basketball spielen muss",
+    "am Donnerstag",
+    "der Freitag",
+    "am Samstag, weil keine Schule ist",
+    "der Sonntag",
+    "das Wochenende"
+  ]
+}
