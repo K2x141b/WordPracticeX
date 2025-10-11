@@ -1,0 +1,16 @@
+[
+  ["Singular", "Einzahl"],
+  ["Plural", "Mehrzahl"],
+  ["maskulin", "männlich"],
+  ["feminin", "weiblich"],
+  ["Neutrum", "sächlich"],
+  ["Deklination", "Anpassung des Nomens an Fall, Zahl"],
+  ["Konjugation", "Anpassung des Verbs an die Person: ich bin, du bist, er ist ..."],
+  ["Nominativ", "Wer-Fall"],
+  ["Akkusativ", "Wen-Fall"],
+  ["Dativ", "Wem-Fall"],
+  ["Genitiv", "Wessen-Fall"],
+  ["bestimmten Artikel", "der, die, das"],
+  ["unbestimmten Artikel", "ein, eine"],
+  ["Nomen, Verben, Adjektive, Pronomen, Partikel", "5 Wortarten"]
+]

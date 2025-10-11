@@ -1,28 +1,13 @@
-export function shuffleLists<T, U>(list1: T[], list2: U[]): [T[], U[]] {
-    if (list1.length !== list2.length) {
-        throw new Error("Both lists must have the same length");
-    }
+export function shuffleWordList(wordList: [string, string][]): [string, string][] {
+  console.log(wordList);
+  const shuffled = [...wordList]; // copy to avoid mutating original
 
-    // Combine into pairs safely
-    const pairs: [T, U][] = list1.map((item, i) => [item, list2[i]] as [T, U]);
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j]!, shuffled[i]!]; // swap
+  }
 
-    // Fisher-Yates shuffle using temporary variable
-    const shuffledPairs: [T, U][] = [];
-    const usedIndices = new Set<number>();
-
-    while (shuffledPairs.length < pairs.length) {
-        const idx = Math.floor(Math.random() * pairs.length);
-        if (!usedIndices.has(idx)) {
-            shuffledPairs.push(pairs[idx]!);
-            usedIndices.add(idx);
-        }
-    }
-
-    // Split back into separate lists
-    const shuffled1 = shuffledPairs.map(p => p[0]);
-    const shuffled2 = shuffledPairs.map(p => p[1]);
-
-    return [shuffled1, shuffled2];
+  return shuffled;
 }
 
 export function speakText(text: string, voiceName = "Google Deutsch", language = "de-DE") {

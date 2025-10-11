@@ -1,11 +1,9 @@
-import { setQLeft } from "../prac-page/prac.logic.js";
+import { wlFilePaths } from "../../database/wl-file-paths.js";
 import { settings } from "../set-page/set.logic.js";
-import { shuffleLists } from "./utils/wl.utils.js";
+import { shuffleWordList } from "./utils/wl.utils.js";
+import type { LangKeys } from "../../database/wl-file-paths.js";
 
-type Wordlist = {
-  questions: string[];
-  answers: string[];
-};
+type Wordlist = [string, string][];
 
 export type LabelData = {
   language: string;
@@ -14,41 +12,57 @@ export type LabelData = {
   length: string;
 };
 
-let wordList: Wordlist;
+interface IWordListManager {
+  getWordList(WLGroup: string, wlFileName: string): void;
+  getWordPair(): [string, string] | "EMPTY";
+  addWordPair(answer: string, question: string): number;
+  useSettings(): void;
+}
 
-export function useSettings() {
-  const [answers, questions] = shuffleLists(wordList.answers, wordList.questions);
-  wordList.answers = answers; 
-  wordList.questions = questions;
-  if (settings.reverseLists) {
-    const temp = wordList.answers;
-    wordList.answers = wordList.questions;
-    wordList.questions = temp;
+export class WordListManager implements IWordListManager {
+  private wordList: Wordlist = [["", ""]];
+  currentWP: [string, string] = ["", ""];
+  langToSpeak: [string, string] = ["", ""];
+
+  async getWordList(WLGroup: LangKeys, wlFileName: string) {
+    this.langToSpeak = wlFilePaths[WLGroup].settings
+    try {
+      const resp = await fetch(`../dist/database/${WLGroup}/${wlFileName}.json`);
+      this.wordList = await resp.json();
+    } catch {
+      window.alert("Failed to get wordlist!");
+    }
   }
-  console.log("Wordlist: ", wordList);
-}
 
-export async function getWordList(wlFileName: string) {
-  try {
-    const resp = await fetch(`../database/Französisch_DisDonc_Prim/${wlFileName}.json`);
-    wordList = await resp.json();
-    setQLeft(wordList.answers.length + 1);
-  } catch {
-    window.alert("Failed to get wordlist!");
+  getWordPair(): [string, string] | "EMPTY" {
+    const wP = this.wordList.shift();
+
+    if (!wP) {
+      return "EMPTY";
+    }
+
+    this.currentWP = wP;
+    return wP; 
   }
-}
 
-export function getWordPair(): [string, string] | "EMPTY" {
-  const answer = wordList.answers.shift();
-  const question = wordList.questions.shift();
+  addWordPair(answer: string, question: string) {
+    let wP: [string, string] = [answer, question];
+    const WLLength = this.wordList.push(wP);
+    return WLLength;
+  }
 
-  return answer && question ? [answer, question] : "EMPTY";
-}
+  getLengthOfWL() {
+    return this.wordList.length;
+  }
 
-export function addWordPair(answer: string, question: string) {
-  const WLLength = wordList.answers.push(answer);
-  wordList.questions.push(question);
-  return WLLength;
+  useSettings() {
+    const newList = shuffleWordList(this.wordList);
+    this.wordList = newList;
+    if (settings.reverseLists) {
+      this.wordList.forEach(pair => [pair[0], pair[1]] = [pair[1], pair[0]]);
+    }
+    console.log("Wordlist: ", this.wordList);
+  }
 }
 
 export function parseLangLabel(label: string) {

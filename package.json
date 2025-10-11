@@ -1,0 +1,36 @@
+{
+  "name": "wordpracticex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npm run build && gh-pages -d dist",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "build:ts": "tsc",
+    "build": "npm run build:css && tsc",
+    "watch:html": "npx chokidar \"src/index.html\" -c \"npm run build:css\"",
+    "watch:ts": "npx chokidar \"src/**/*.ts\" -c \"npm run build:ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K2x141b/WordPracticeX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/K2x141b/WordPracticeX/issues"
+  },
+  "homepage": "https://github.com/K2x141b/WordPracticeX#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "chokidar-cli": "^3.0.0",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13"
+  }
+}

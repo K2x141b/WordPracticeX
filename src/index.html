@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>WordPracticeX</title>
+  </head>
+  <body class="h-full flex flex-col dark:bg-zinc-700 min-h-screen">
+    <div
+      id="menu"
+      class="gap-4 h-12 flex items-center px-4 py-2 shadow-sm dark:bg-zinc-700 dark:shadow-md/30"
+    >
+      <p
+        class="font-extrabold font-sans px-0.5 bg-gradient-to-r from-rose-500 to-cyan-500 dark:from-rose-400 dark:to-cyan-400 text-transparent bg-clip-text"
+      >
+        WordPracticeX
+      </p>
+      <div class="w-0.5 h-6 bg-zinc-300 dark:bg-zinc-600"></div>
+      <button
+        id="menu__wl-btn"
+        class="rounded-lg px-2 py-1 font-medium text-base/6 text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600"
+      >
+        Übungen
+      </button>
+      <button
+        id="menu__set-btn"
+        class="rounded-lg px-2 py-1 font-medium text-base/6 text-zinc-800 hover:bg-zinc-100 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600"
+      >
+        Einstellungen
+      </button>
+      <button
+        id="menu__dark-btn"
+        class="flex items-center justify-center p-2 ml-auto rounded-lg dark:hover:bg-zinc-600 dark:bg-zinc-700 hover:bg-zinc-100"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          id="menu__moon-icon"
+          class="w-4 h-4 hidden fill-current text-zinc-300"
+        >
+          <path
+            d="M256 0C114.6 0 0 114.6 0 256S114.6 512 256 512c68.8 0 131.3-27.2 177.3-71.4 7.3-7 9.4-17.9 5.3-27.1s-13.7-14.9-23.8-14.1c-4.9 .4-9.8 .6-14.8 .6-101.6 0-184-82.4-184-184 0-72.1 41.5-134.6 102.1-164.8 9.1-4.5 14.3-14.3 13.1-24.4S322.6 8.5 312.7 6.3C294.4 2.2 275.4 0 256 0z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+          id="menu__sun-icon"
+          class="w-4 h-4 fill-current text-zinc-800"
+        >
+          <path
+            d="M178.2-10.1c7.4-3.1 15.8-2.2 22.5 2.2l87.8 58.2 87.8-58.2c6.7-4.4 15.1-5.2 22.5-2.2S411.4-.5 413 7.3l20.9 103.2 103.2 20.9c7.8 1.6 14.4 7 17.4 14.3s2.2 15.8-2.2 22.5l-58.2 87.8 58.2 87.8c4.4 6.7 5.2 15.1 2.2 22.5s-9.6 12.8-17.4 14.3L433.8 401.4 413 504.7c-1.6 7.8-7 14.4-14.3 17.4s-15.8 2.2-22.5-2.2l-87.8-58.2-87.8 58.2c-6.7 4.4-15.1 5.2-22.5 2.2s-12.8-9.6-14.3-17.4L143 401.4 39.7 380.5c-7.8-1.6-14.4-7-17.4-14.3s-2.2-15.8 2.2-22.5L82.7 256 24.5 168.2c-4.4-6.7-5.2-15.1-2.2-22.5s9.6-12.8 17.4-14.3L143 110.6 163.9 7.3c1.6-7.8 7-14.4 14.3-17.4zM207.6 256a80.4 80.4 0 1 1 160.8 0 80.4 80.4 0 1 1 -160.8 0zm208.8 0a128.4 128.4 0 1 0 -256.8 0 128.4 128.4 0 1 0 256.8 0z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      id="set-page"
+      class="text-lg/loose p-6 mt-4 w-2/3 mx-auto border-zinc-200 rounded-lg border-1 h-auto shadow-md"
+    >
+      <p>Settings Here</p>
+      <button id="set-page__reverse-btn">not reversed</button><br />
+      <button id="set-page__shuffle-list-btn">Shuffle Lists</button>
+    </div>
+    <div id="wl-page" class="flex-grow">
+      <p id="wl-page__header" class="mt-6 mb-3 text-lg/relaxed text-center text-zinc-400">
+        <span class="text-zinc-800 dark:text-zinc-300 font-semibold">Wortliste wählen</span><br />
+        Wähle eine Liste, um die Wörter gezielt zu üben.
+      </p>
+      <div id="wl-page__div" class="flex flex-wrap justify-center gap-4"></div>
+    </div>
+    <div id="prac-page" class="flex-1 flex items-center justify-center">
+      <div class="w-3/5 text-lg">
+        <div class="flex justify-between my-5 font-medium text-zinc-700 dark:text-zinc-300">
+          <p id="prac-page__wl-label">Französisch — Unité 1 Lernziel 1</p>
+          <p id="prac-page__q-left"></p>
+        </div>
+        <div>
+          <p
+            id="prac-page__q-disp"
+            class="p-16 rounded-xl w-full text-center font-semibold text-zinc-700 dark:text-zinc-300 bg-violet-50 dark:bg-violet-950/25 text-4xl shadow-md"
+          >
+            Question
+          </p>
+          <div id="prac-page__img-div" class="p-4 dark:brightness-75 dark:contrast-90 dark:invert flex justify-center rounded-xl w-full text-4xl shadow-md"></div>
+        </div>
+        <div class="flex mt-8">
+          <input
+            type="text"
+            name="prac-page__txt"
+            id="prac-page__txt"
+            autocomplete="off"
+            class="h-10 px-3 rounded-lg w-full mr-6 border-2 border-zinc-500 ring-0 dark:text-zinc-300 dark:outline-none"
+          />
+          <button
+            id="prac-page__check-btn"
+            class="h-10 font-medium px-4 text-zinc-50 rounded-full bg-zinc-600 shadow-xl"
+          >
+            Prüfen
+          </button>
+        </div>
+        <p class="font-medium mt-6">
+          <span id="prac-page__answer-disp">Richtig!</span>
+          <span class="opacity-0">x</span>
+        </p>
+      </div>
+    </div>
+    <footer class="h-40 bg-zinc-50 px-10 text-zinc-500">
+      <p>Privacy Policy</p>
+
+    </footer>
+  </body>
+  <script src="../dist/app/app.js" type="module"></script>
+</html>

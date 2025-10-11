@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark :focus {
+  @apply outline-2 outline-zinc-400;
+}

@@ -4,7 +4,8 @@ export type LangKeys =
   | "Englisch_Meinklett_Prim_3"
   | "Französisch_DisDonc_OSD_3"
   | "Französisch_DisDonc_Prim_11"
-  | "Französisch_Meinklett_Prim_19";
+  | "Französisch_Meinklett_Prim_19"
+  | "NT_WordPracticeX_OSD_1";
 
 export type WLGroup = {
   settings: [string, string];
@@ -18,7 +19,7 @@ export const wlFilePaths: Record<LangKeys, WLGroup> = {
   },
   Französisch_DisDonc_OSD_3: {
     settings: ["Google français", "fr-FR"],
-    paths: ["Unité_1_Lernziel_1|17", "Unité_1_Lernziel_2|28", "Unité_1_Lernziel_3|31"],
+    paths: ["Unité_1_Lernziel_1|17", "Unité_1_Lernziel_2|25", "Unité_1_Lernziel_3|31"],
   },
   Englisch_Meinklett_OSD_1: { settings: ["Google US English", "en-US"], paths: ["unit_1|42"] },
   Französisch_Meinklett_Prim_19: {
@@ -64,5 +65,9 @@ export const wlFilePaths: Record<LangKeys, WLGroup> = {
   Englisch_Meinklett_Prim_3: {
     settings: ["Google US English", "en-US"],
     paths: ["test1|40", "unit_house|33", "unit_3|36"],
+  },
+  NT_WordPracticeX_OSD_1: {
+    settings: ["Google Deutsch", "de-DE"],
+    paths: ["Knochen|27"],
   },
 };
