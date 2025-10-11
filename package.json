@@ -9,7 +9,7 @@
     "build:ts": "npx tsc",
     "copy:folders": "cp src/index.html dist/",
     "build": "npm run build:css && npm run build:ts && npm run copy:folders",
-    "watch:html": "npx chokidar \"src/index.html\" -c \"npm run build:css\"",
+    "watch:html": "npx chokidar \"src/index.html\" -c \"npm run build:css && xcopy \".\\src\\index.html\" \".\\dist\\index.html\" /Y && xcopy \".\\src\\database\" \".\\dist\\database\" /E /Y\"",
     "watch:ts": "npx chokidar \"src/**/*.ts\" -c \"npm run build:ts\""
   },
   "repository": {

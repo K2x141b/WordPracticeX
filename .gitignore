@@ -1,2 +1,5 @@
-/node_modules
 /dist
+/node_modules
+/src/database/Englisch_Meinklett_Prim_3
+/src/database/Französisch_DisDonc_Prim_11
+/src/database/Französisch_Meinklett_Prim_19

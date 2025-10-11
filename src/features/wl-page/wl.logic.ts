@@ -27,7 +27,7 @@ export class WordListManager implements IWordListManager {
   async getWordList(WLGroup: LangKeys, wlFileName: string) {
     this.langToSpeak = wlFilePaths[WLGroup].settings
     try {
-      const resp = await fetch(`../dist/database/${WLGroup}/${wlFileName}.json`);
+      const resp = await fetch(`./database/${WLGroup}/${wlFileName}.json`);
       this.wordList = await resp.json();
     } catch {
       window.alert("Failed to get wordlist!");
