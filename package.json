@@ -6,7 +6,7 @@
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",
     "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "build:ts": "tsc",
+    "build:ts": "npx tsc",
     "copy:folders": "xcopy src\\index.html dist\\ /Y",
     "build": "npm run build:css && npm run build:ts && npm run copy:folders",
     "watch:html": "npx chokidar \"src/index.html\" -c \"npm run build:css\"",
@@ -29,7 +29,8 @@
     "chokidar-cli": "^3.0.0",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13"
