@@ -7,7 +7,7 @@
     "deploy": "npm run build && gh-pages -d dist",
     "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "build:ts": "npx tsc",
-    "copy:folders": "xcopy src\\index.html dist\\ /Y",
+    "copy:folders": "cp src\\index.html dist\\",
     "build": "npm run build:css && npm run build:ts && npm run copy:folders",
     "watch:html": "npx chokidar \"src/index.html\" -c \"npm run build:css\"",
     "watch:ts": "npx chokidar \"src/**/*.ts\" -c \"npm run build:ts\""
